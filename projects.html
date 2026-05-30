@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Semua proyek — web, mobile, desktop, dan eksperimen. Portfolio lengkap Software Developer." />
+  <meta name="author" content="Muhamad Syahrul" />
+  <meta property="og:title" content="Semua Proyek — Muhamad Syahrul" />
+  <meta property="og:description" content="Daftar lengkap proyek web, mobile, desktop, dan eksperimen." />
+  <meta property="og:type" content="website" />
+  <title>Semua Proyek — Muhamad Syahrul</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Navigasi utama">
+    <div class="nav-container">
+      <a href="/my-page/" class="nav-logo" aria-label="Kembali ke halaman utama">
+        <span class="logo-bracket">[</span>MS<span class="logo-bracket">]</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navMenu">
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+      </button>
+      <ul class="nav-menu" id="navMenu" role="list">
+        <li><a href="/my-page/#about" class="nav-link">Tentang</a></li>
+        <li><a href="/my-page/#skills" class="nav-link">Skills</a></li>
+        <li><a href="/my-page/#experience" class="nav-link">Pengalaman</a></li>
+        <li><a href="projects.html" class="nav-link active">Proyek</a></li>
+        <li><a href="/my-page/#creative" class="nav-link">Kreatif</a></li>
+        <li><a href="/my-page/#contact" class="nav-link">Kontak</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="ppage-hero" aria-labelledby="ppage-title">
+    <div class="ppage-hero-bg" aria-hidden="true"></div>
+    <div class="ppage-hero-content">
+      <a href="/my-page/" class="ppage-back">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M19 12H5"/><path d="m12 5-7 7 7 7"/></svg>
+        Kembali ke Beranda
+      </a>
+      <h1 class="ppage-title" id="ppage-title">Semua <em>Proyek</em></h1>
+      <p class="ppage-desc">Kumpulan proyek dari berbagai domain — web, mobile, desktop, dan eksperimen. Dibangun sendiri, kadang dengan bantuan AI sebagai pair programmer.</p>
+      <div class="ppage-stats">
+        <div class="ppage-stat">
+          <span class="ppage-stat-num" id="totalCount">0</span>
+          <span class="ppage-stat-label">Total Proyek</span>
+        </div>
+        <div class="ppage-stat">
+          <span class="ppage-stat-num">4</span>
+          <span class="ppage-stat-label">Kategori</span>
+        </div>
+        <div class="ppage-stat">
+          <span class="ppage-stat-num">4</span>
+          <span class="ppage-stat-label">Proyek Unggulan</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- FILTER BAR -->
+  <div class="ppage-filter-bar" role="navigation" aria-label="Filter proyek">
+    <div class="ppage-filter-inner">
+      <span class="filter-label">Filter:</span>
+      <button class="filter-btn active" data-filter="all">Semua</button>
+      <button class="filter-btn" data-filter="web">Web</button>
+      <button class="filter-btn" data-filter="mobile">Mobile</button>
+      <button class="filter-btn" data-filter="desktop">Desktop</button>
+      <button class="filter-btn" data-filter="wip">In Progress</button>
+    </div>
+  </div>
+
+  <!-- MAIN GRID -->
+  <main class="ppage-main" id="main-content">
+    <div class="ppage-grid" id="projectsGrid">
+
+      <!-- ═══════════════════════════════════
+           WEB PROJECTS
+      ═══════════════════════════════════ -->
+      <div class="ppage-category-row" data-category-row="web">
+        <span class="ppage-category-label">// Web</span>
+        <span class="ppage-category-line"></span>
+      </div>
+
+      <article class="ppage-card featured reveal" data-category="web" aria-label="Proyek PPOB dan Topup Platform">
+        <div class="ppage-card-img ppi-2">
+          <span class="ppage-featured-badge">Unggulan</span>
+          <svg class="ppage-card-svg" viewBox="0 0 80 80" fill="none" aria-hidden="true">
+            <rect x="10" y="20" width="60" height="40" rx="4" stroke="currentColor" stroke-width="2"/>
+            <path d="M10 30h60" stroke="currentColor" stroke-width="1.5"/>
+            <circle cx="20" cy="25" r="2" fill="#00f5d4"/>
+            <circle cx="27" cy="25" r="2" fill="currentColor" opacity="0.3"/>
+            <circle cx="34" cy="25" r="2" fill="currentColor" opacity="0.3"/>
+            <rect x="16" y="36" width="20" height="12" rx="2" fill="currentColor" opacity="0.1"/>
+            <rect x="42" y="36" width="22" height="5" rx="1" fill="currentColor" opacity="0.1"/>
+            <rect x="42" y="44" width="14" height="4" rx="1" fill="#00f5d4" opacity="0.4"/>
+          </svg>
+        </div>
+        <div class="ppage-card-body">
+          <h2 class="ppage-card-title">PPOB & Topup Platform</h2>
+          <p class="ppage-card-desc">Website PPOB dan topup game dengan dashboard admin komprehensif. Terintegrasi dengan Digiflazz dan VIPTopup API. Roadmap: AI insight untuk penjual.</p>
+          <div class="ppage-card-tech">
+            <span>Next.js</span><span>Supabase</span><span>Digiflazz</span><span>VIPTopup</span>
+          </div>
+          <div class="ppage-card-links">
+            <a href="#" class="btn-sm btn-outline">Demo</a>
+            <a href="#" class="btn-sm btn-ghost-sm">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="ppage-card featured reveal" data-category="web" aria-label="Proyek Novel Reading Platform">
+        <div class="ppage-card-img ppi-3">
+          <span class="ppage-featured-badge">Unggulan</span>
+          <svg class="ppage-card-svg" viewBox="0 0 80 80" fill="none" aria-hidden="true">
+            <rect x="16" y="12" width="36" height="48" rx="3" stroke="currentColor" stroke-width="2"/>
+            <rect x="20" y="16" width="28" height="6" rx="1" fill="currentColor" opacity="0.15"/>
+            <path d="M20 27h28M20 32h22M20 37h26M20 42h20M20 47h24M20 52h18" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+            <rect x="44" y="30" width="18" height="28" rx="3" fill="#0d1b2a" stroke="#00f5d4" stroke-width="1.5"/>
+            <path d="M47 38h12M47 42h9M47 46h11M47 50h7" stroke="#00f5d4" stroke-width="1" stroke-linecap="round" opacity="0.7"/>
+          </svg>
+        </div>
+        <div class="ppage-card-body">
+          <h2 class="ppage-card-title">Novel Reading Platform</h2>
+          <p class="ppage-card-desc">Platform membaca novel berbasis web. Fokus pada performa tinggi dan biaya operasional rendah dengan arsitektur Supabase free tier yang efisien.</p>
+          <div class="ppage-card-tech">
+            <span>Next.js</span><span>Supabase</span><span>JavaScript</span>
+          </div>
+          <div class="ppage-card-links">
+            <a href="#" class="btn-sm btn-outline">Demo</a>
+            <a href="#" class="btn-sm btn-ghost-sm">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="ppage-card reveal" data-category="web" aria-label="Proyek Portfolio Website">
+        <div class="ppage-card-img ppi-6">
+          <svg class="ppage-card-svg" viewBox="0 0 80 80" fill="none" aria-hidden="true">
+            <rect x="8" y="16" width="64" height="48" rx="4" stroke="currentColor" stroke-width="2"/>
+            <path d="M8 26h64" stroke="currentColor" stroke-width="1.5"/>
+            <circle cx="18" cy="21" r="2" fill="currentColor" opacity="0.4"/>
+            <circle cx="25" cy="21" r="2" fill="currentColor" opacity="0.4"/>
+            <circle cx="32" cy="21" r="2" fill="#00f5d4" opacity="0.6"/>
+            <rect x="14" y="32" width="24" height="14" rx="2" fill="currentColor" opacity="0.08"/>
+            <rect x="14" y="50" width="52" height="4" rx="1" fill="currentColor" opacity="0.06"/>
+            <path d="M44 32h22M44 37h16M44 42h19" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" opacity="0.4"/>
+          </svg>
+        </div>
+        <div class="ppage-card-body">
+          <h2 class="ppage-card-title">Portfolio Website</h2>
+          <p class="ppage-card-desc">Website portofolio pribadi ini. Dibangun murni dengan HTML, CSS, dan JavaScript vanilla tanpa framework. Dark mode, animasi halus, siap GitHub Pages.</p>
+          <div class="ppage-card-tech">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+          <div class="ppage-card-links">
+            <a href="/my-page/" class="btn-sm btn-outline">Lihat</a>
+            <a href="#" class="btn-sm btn-ghost-sm">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="ppage-card reveal" data-category="web wip" aria-label="Proyek PPOB dengan AI (In Progress)">
+        <div class="ppage-card-img ppi-5">
+          <span class="ppage-wip-badge">In Progress</span>
+          <svg class="ppage-card-svg" viewBox="0 0 80 80" fill="none" aria-hidden="true">
+            <circle cx="40" cy="40" r="22" stroke="currentColor" stroke-width="2"/>
+            <path d="M40 22v6M40 52v6M22 40h6M52 40h6" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+            <circle cx="40" cy="40" r="10" stroke="currentColor" stroke-width="1.5" opacity="0.3"/>
+            <path d="M35 38l3 3 7-7" stroke="#b460ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="55" cy="25" r="8" fill="#0a1628" stroke="#b460ff" stroke-width="1.5"/>
+            <path d="M52 25h6M55 22v6" stroke="#b460ff" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="ppage-card-body">
+          <h2 class="ppage-card-title">PPOB + AI Insight</h2>
+          <p class="ppage-card-desc">Pengembangan lanjutan PPOB Platform dengan tambahan fitur AI: penyajian UI dinamis untuk pembeli dan laporan insight otomatis untuk penjual.</p>
+          <div class="ppage-card-tech">
+            <span>Next.js</span><span>Supabase</span><span>Claude AI</span><span>API</span>
+          </div>
+          <div class="ppage-card-links">
+            <a href="#" class="btn-sm btn-outline" style="opacity:0.5;pointer-events:none;">Demo</a>
+            <a href="#" class="btn-sm btn-ghost-sm">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- ═══════════════════════════════════
+           MOBILE PROJECTS
+      ═══════════════════════════════════ -->
+      <div class="ppage-category-row" data-category-row="mobile">
+        <span class="ppage-category-label">// Mobile</span>
+        <span class="ppage-category-line"></span>
+      </div>
+
+      <article class="ppage-card featured reveal" data-category="mobile" aria-label="Proyek Android POS">
+        <div class="ppage-card-img ppi-1">
+          <span class="ppage-featured-badge">Unggulan</span>
+          <svg class="ppage-card-svg" viewBox="0 0 80 80" fill="none" aria-hidden="true">
+            <rect x="22" y="8" width="36" height="64" rx="5" stroke="currentColor" stroke-width="2"/>
+            <rect x="28" y="18" width="24" height="32" rx="2" fill="currentColor" opacity="0.1"/>
+            <circle cx="40" cy="62" r="3" fill="currentColor" opacity="0.5"/>
+            <path d="M33 26h14M33 31h10M33 36h12M33 41h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            <circle cx="58" cy="58" r="10" fill="#00f5d4" opacity="0.2"/>
+            <path d="M54 58l2.5 2.5L62 56" stroke="#00f5d4" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="ppage-card-body">
+          <h2 class="ppage-card-title">Android POS</h2>
+          <p class="ppage-card-desc">Aplikasi kasir Android dengan fitur transaksi lengkap dan input penjualan via voice command. Dirancang untuk kasir dan pemilik UMKM agar bekerja lebih cepat.</p>
+          <div class="ppage-card-tech">
+            <span>Java</span><span>Android Studio</span><span>Voice API</span>
+          </div>
+          <div class="ppage-card-links">
+            <a href="#" class="btn-sm btn-outline">Demo</a>
+            <a href="#" class="btn-sm btn-ghost-sm">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="ppage-card reveal" data-category="mobile" aria-label="Proyek Aplikasi Ojek Online">
+        <div class="ppage-card-img ppi-7">
+          <svg class="ppage-card-svg" viewBox="0 0 80 80" fill="none" aria-hidden="true">
+            <circle cx="40" cy="36" r="14" stroke="currentColor" stroke-width="2"/>
+            <path d="M40 22v4M40 46v4M26 36h4M50 36h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+            <circle cx="40" cy="36" r="4" fill="currentColor" opacity="0.3"/>
+            <path d="M28 56c0-6.627 5.373-12 12-12s12 5.373 12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+            <path d="M32 56h16" stroke="#ffa050" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="ppage-card-body">
+          <h2 class="ppage-card-title">Ojek Online — User App</h2>
+          <p class="ppage-card-desc">Aplikasi penumpang untuk layanan ojek online berbasis pangkalan. Dikerjakan saat bergabung di software house pertama sebagai developer mobile.</p>
+          <div class="ppage-card-tech">
+            <span>Java</span><span>Android Studio</span><span>Maps API</span>
+          </div>
+          <div class="ppage-card-links">
+            <a href="#" class="btn-sm btn-outline">Demo</a>
+            <a href="#" class="btn-sm btn-ghost-sm">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="ppage-card reveal" data-category="mobile" aria-label="Proyek Augmented Reality">
+        <div class="ppage-card-img ppi-5">
+          <svg class="ppage-card-svg" viewBox="0 0 80 80" fill="none" aria-hidden="true">
+            <rect x="12" y="24" width="56" height="36" rx="4" stroke="currentColor" stroke-width="2" stroke-dasharray="4 2"/>
+            <rect x="24" y="32" width="16" height="20" rx="2" fill="currentColor" opacity="0.1" stroke="currentColor" stroke-width="1.2"/>
+            <circle cx="32" cy="38" r="4" stroke="#b460ff" stroke-width="1.5"/>
+            <path d="M44 34h14M44 39h10M44 44h12" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" opacity="0.5"/>
+            <path d="M12 28L8 24M12 44L8 48M68 28L72 24M68 44L72 48" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+          </svg>
+        </div>
+        <div class="ppage-card-body">
+          <h2 class="ppage-card-title">AR Advertising Feature</h2>
+          <p class="ppage-card-desc">Fitur Augmented Reality dalam aplikasi ojek online untuk kebutuhan iklan in-app. Pengguna dapat berinteraksi dengan overlay AR saat menggunakan aplikasi.</p>
+          <div class="ppage-card-tech">
+            <span>Java</span><span>ARCore</span><span>Android</span>
+          </div>
+          <div class="ppage-card-links">
+            <a href="#" class="btn-sm btn-outline">Demo</a>
+            <a href="#" class="btn-sm btn-ghost-sm">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- ═══════════════════════════════════
+           DESKTOP PROJECTS
+      ═══════════════════════════════════ -->
+      <div class="ppage-category-row" data-category-row="desktop">
+        <span class="ppage-category-label">// Desktop & Tools</span>
+        <span class="ppage-category-line"></span>
+      </div>
+
+      <article class="ppage-card featured reveal" data-category="desktop" aria-label="Proyek Internal Retail Tools">
+        <div class="ppage-card-img ppi-4">
+          <span class="ppage-featured-badge">Unggulan</span>
+          <svg class="ppage-card-svg" viewBox="0 0 80 80" fill="none" aria-hidden="true">
+            <rect x="12" y="16" width="56" height="40" rx="3" stroke="currentColor" stroke-width="2"/>
+            <path d="M12 26h56" stroke="currentColor" stroke-width="1.5"/>
+            <rect x="18" y="32" width="16" height="18" rx="2" fill="currentColor" opacity="0.1"/>
+            <rect x="40" y="32" width="22" height="8" rx="2" fill="currentColor" opacity="0.1"/>
+            <rect x="40" y="44" width="22" height="6" rx="2" fill="#ff6b35" opacity="0.3"/>
+            <path d="M32 58h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="40" cy="62" r="2" fill="currentColor" opacity="0.3"/>
+            <path d="M20 36h12M20 40h8M20 44h10" stroke="#ff6b35" stroke-width="1.2" stroke-linecap="round" opacity="0.8"/>
+          </svg>
+        </div>
+        <div class="ppage-card-body">
+          <h2 class="ppage-card-title">Internal Retail Tools</h2>
+          <p class="ppage-card-desc">Aplikasi desktop untuk meningkatkan efisiensi kerja operasional retail. Dibuat berdasarkan kebutuhan nyata — sebagai pengguna sekaligus pengembangnya.</p>
+          <div class="ppage-card-tech">
+            <span>.NET</span><span>C#</span><span>SQL</span><span>Visual Studio</span>
+          </div>
+          <div class="ppage-card-links">
+            <a href="#" class="btn-sm btn-outline">Demo</a>
+            <a href="#" class="btn-sm btn-ghost-sm">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="ppage-card reveal" data-category="desktop" aria-label="Proyek Helper Script EDP">
+        <div class="ppage-card-img ppi-8">
+          <svg class="ppage-card-svg" viewBox="0 0 80 80" fill="none" aria-hidden="true">
+            <rect x="16" y="18" width="48" height="44" rx="3" stroke="currentColor" stroke-width="2"/>
+            <path d="M16 28h48" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M24 38l6 4-6 4" stroke="#50dc78" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M36 46h16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+            <path d="M36 38h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/>
+            <circle cx="21" cy="23" r="1.5" fill="currentColor" opacity="0.3"/>
+            <circle cx="26" cy="23" r="1.5" fill="currentColor" opacity="0.3"/>
+            <circle cx="31" cy="23" r="1.5" fill="#50dc78" opacity="0.6"/>
+          </svg>
+        </div>
+        <div class="ppage-card-body">
+          <h2 class="ppage-card-title">EDP Helper Scripts</h2>
+          <p class="ppage-card-desc">Kumpulan script dan micro-tools untuk otomasi pekerjaan rutin EDP — validasi data, generate laporan, dan sinkronisasi antar sistem internal.</p>
+          <div class="ppage-card-tech">
+            <span>.NET</span><span>C#</span><span>Excel</span><span>SQL</span>
+          </div>
+          <div class="ppage-card-links">
+            <a href="#" class="btn-sm btn-outline">Demo</a>
+            <a href="#" class="btn-sm btn-ghost-sm">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <article class="ppage-card reveal" data-category="desktop wip" aria-label="Proyek Inventory Checker">
+        <div class="ppage-card-img ppi-4">
+          <span class="ppage-wip-badge">In Progress</span>
+          <svg class="ppage-card-svg" viewBox="0 0 80 80" fill="none" aria-hidden="true">
+            <rect x="14" y="20" width="52" height="42" rx="3" stroke="currentColor" stroke-width="2"/>
+            <path d="M14 32h52" stroke="currentColor" stroke-width="1.5"/>
+            <rect x="20" y="38" width="14" height="8" rx="1" fill="currentColor" opacity="0.1"/>
+            <rect x="38" y="38" width="22" height="8" rx="1" fill="currentColor" opacity="0.1"/>
+            <rect x="20" y="50" width="18" height="6" rx="1" fill="#ff6b35" opacity="0.25"/>
+            <rect x="42" y="50" width="18" height="6" rx="1" fill="currentColor" opacity="0.1"/>
+            <path d="M20 26h10M34 26h10M48 26h8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" opacity="0.4"/>
+          </svg>
+        </div>
+        <div class="ppage-card-body">
+          <h2 class="ppage-card-title">Inventory Checker</h2>
+          <p class="ppage-card-desc">Tools desktop untuk pengecekan stok dan komparasi data inventory antar sistem. Mengurangi kesalahan manual dalam rekonsiliasi data gudang vs sistem.</p>
+          <div class="ppage-card-tech">
+            <span>.NET</span><span>C#</span><span>SQL</span>
+          </div>
+          <div class="ppage-card-links">
+            <a href="#" class="btn-sm btn-outline" style="opacity:0.5;pointer-events:none;">Demo</a>
+            <a href="#" class="btn-sm btn-ghost-sm">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Empty state -->
+      <div class="ppage-empty" id="emptyState" role="status">
+        <p>Tidak ada proyek untuk filter ini.</p>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-copy">© 2026 <strong>Muhamad Syahrul</strong></p>
+        <a href="/my-page/" class="ppage-back" style="margin-bottom:0;">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M19 12H5"/><path d="m12 5-7 7 7 7"/></svg>
+          Kembali ke Beranda
+        </a>
+        <a href="#" class="back-top" id="backTop" aria-label="Kembali ke atas">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 15l-6-6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+  (function () {
+    'use strict';
+
+    /* ── NAVBAR ── */
+    const navbar = document.getElementById('navbar');
+    const navToggle = document.getElementById('navToggle');
+    const navMenu = document.getElementById('navMenu');
+
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 50);
+    }, { passive: true });
+
+    navToggle.addEventListener('click', () => {
+      const isOpen = navMenu.classList.toggle('open');
+      navToggle.classList.toggle('open', isOpen);
+      navToggle.setAttribute('aria-expanded', String(isOpen));
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!navbar.contains(e.target)) {
+        navMenu.classList.remove('open');
+        navToggle.classList.remove('open');
+        navToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        navMenu.classList.remove('open');
+        navToggle.classList.remove('open');
+        navToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    /* ── SCROLL REVEAL ── */
+    const revealEls = document.querySelectorAll('.reveal');
+    const revealObs = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -30px 0px' });
+    revealEls.forEach(el => revealObs.observe(el));
+
+    /* ── COUNTER — Total Proyek ── */
+    const countEl = document.getElementById('totalCount');
+    const cards = document.querySelectorAll('.ppage-card');
+    const total = cards.length;
+
+    const cObs = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          let current = 0;
+          const step = () => {
+            current++;
+            countEl.textContent = current;
+            if (current < total) requestAnimationFrame(step);
+          };
+          requestAnimationFrame(step);
+          cObs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.5 });
+    cObs.observe(countEl);
+
+    /* ── FILTER ── */
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const categoryRows = document.querySelectorAll('[data-category-row]');
+    const emptyState = document.getElementById('emptyState');
+
+    function applyFilter(filter) {
+      let visibleCount = 0;
+
+      cards.forEach(card => {
+        const cats = (card.dataset.category || '').split(' ');
+        const show = filter === 'all' || cats.includes(filter);
+        card.classList.toggle('hidden', !show);
+        if (show) visibleCount++;
+      });
+
+      // Show/hide category row labels
+      categoryRows.forEach(row => {
+        const rowCat = row.dataset.categoryRow;
+        // Find if any visible card belongs to this category
+        const hasVisible = Array.from(cards).some(card => {
+          const cats = (card.dataset.category || '').split(' ');
+          const show = filter === 'all' || cats.includes(filter);
+          return show && cats.includes(rowCat);
+        });
+        row.style.display = hasVisible ? '' : 'none';
+      });
+
+      emptyState.classList.toggle('visible', visibleCount === 0);
+    }
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        applyFilter(btn.dataset.filter);
+      });
+    });
+
+    /* ── REDUCED MOTION ── */
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      revealEls.forEach(el => el.classList.add('visible'));
+    }
+
+  }());
+  </script>
+
+</body>
+</html>
